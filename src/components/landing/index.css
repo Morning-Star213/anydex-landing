@@ -1,0 +1,35 @@
+.gradient {
+  background: linear-gradient(
+    to right,
+    #f6f6f6 20%,
+    #5c67cf 40%,
+    #2d2d8b 60%,
+    #f6f6f6 80%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  width: max-content;
+  /* text-fill-color: transparent; */
+  background-position: 50% 50%;
+  background-size: 500% auto;
+  animation: textShine 2.5s ease-in-out infinite;
+}
+
+@keyframes textShine {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+th,
+td {
+  text-align: left;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 4px;
+  padding-right: 4px;
+}
